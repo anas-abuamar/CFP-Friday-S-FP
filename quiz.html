@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CFP App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontaweome for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!--info -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules about our Quiz in CFP</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the test when you're starting.</div>
+            <div class="info">5. Score higher than 120 Welcome to you you are <span style="color: #0add0a">accepted</span>.</div>
+            <div class="info">6. Score higher than 70 and less than 120 <span style="color: #FF9900">Waiting list</span> </div>
+            <div class="info">7. Score less than 70 we are sorry to you <span style="color: #f00e0e">cant be accepted</span>.</div>
+            <div class="info">8. And finally We recommend using a piece of paper for some questions.</div>
+
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Code for Palestine test</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!--from JS-->
+            </div>
+            <div class="option_list">
+                <!--from JS-->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- inserted Score from JS -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay?!</button>
+            <button class="quit">Back to Home</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>

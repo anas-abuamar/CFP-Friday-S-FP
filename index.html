@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">CFP World</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-links">HOME</a></li>
+                <li><a href="#" class="nav-links">About program</a></li>
+                <li><a href="#" class="nav-links">Gallery</a></li>
+                <li><a href="#" class="nav-links">Talk with Student</a></li>
+                <li><a href="#" class="nav-links nav-links-btn">Sign up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="main-container">
+            <div class="main-contant">
+                <div class="title"><h1><h1>Code for Palestine</h1</h1></div>
+                <p>Code for Palestine was born in 2015 out of a desire to teach coding and entrepreneurial skills to some of the brightest high school students throughout the West Bank and Gaza Strip.  The organization funding the initiative, the PalTel Group Foundation [PGF], recognized that there weren’t enough students graduating from Palestinian universities in STEM fields, and those that were graduating lacked some of the critical skills needed to succeed in the private sector.  Most importantly, PGF saw an opportunity for a tech-driven startup scene to help tackle some of Palestine’s problems, and realized that a culture of entrepreneurship needed to be bred in order for a startup culture to blossom.Code for Palestine is a three year-long program, beginning the summer before 10th grade and concluding after 12th grade.  Each year has many in-person sessions but is kicked off by a two-week camp held during the summer.  Volunteer undergraduate instructors from Stanford University have served as the primary teachers during the two-week summer camp.
+                 </p>
+                 <button class="main-btn"><a href="#">Get Started</a></button>
+            </div>
+            <div class="main-img-container">
+                <img src="images/pic1.jpg" alt="" id="main-img">
+               <!-- <img src="images/pic2.jpg" alt="" id="main-img"> Gaza CFP-->  
+            </div>
+        </div>
+    </div>
+
+    <!--Modal -->
+    <div class="modal" id="main-modal">
+        <div class="modal-content">
+            <div class="close-btn">&times;</div>        <!--&times = multiplication sign-->
+            <div class="modal-content-left">
+                <img id="modal-img" src="images/logo1.png" alt="">
+            </div>
+            <div class="modal-content-right"> <!--conver method to "post" :)--->
+                <div class="container">
+                    <div class="forms">
+                        <div class="form login">
+                            <span class="title">Login</span>
+                            <form id="form-loging" action="/">
+                                <h1>Registration</h1>
+                                <div class="input-field">
+                                    <input id="username" name="username" type="text" placeholder="Enter your Handel" required>
+                                    <i class="uil uil-user"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="input-field">
+                                    <input id="email" name="email" type="text" placeholder="Enter your Email" required>
+                                    <i class="uil uil-envelope icon"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="input-field">
+                                    <input id="password" name="password" class="cnv" type="password" placeholder="Enter your Password" required>
+                                    <i class="uil uil-lock icon"></i>
+                                    <i class="uil uil-eye-slash showHidePw"></i>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="checkbox-text">
+                                    <div class="checkbox-content">
+                                        <input type="checkbox" id="logCheck">
+                                        <label for="logCheck" class="text">Remember me</label>
+                                    </div>
+                                    
+                                    <a href="#" class="text">Forgot password?</a>
+                                </div>
+            
+                                <div class="input-field button">
+                                    <input type="submit" value="Login Now">
+                                </div>
+                            </form>
+            
+                            <div class="login-signup">
+                                <span class="text">Not a member?
+                                    <a href="#" class="text signup-link">Fill info now</a>
+                                </span>
+                            </div>
+                        </div>
+            
+            
+                        <!-- Registration Form -->
+                        <div class="form signup">
+                            <span class="title">Registration</span>
+            
+                            <form id="take-exam" action="#">
+                                <div class="input-field">
+                                    <input type="text" placeholder="Enter your name" required>
+                                    <i class="uil uil-user"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" placeholder="Enter your email" required>
+                                    <i class="uil uil-envelope icon"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" class="cnv" placeholder="Create a password" required>
+                                    <i class="uil uil-lock icon"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input id="password2" name="password2" class="cnv" type="password" placeholder="Enter your Password again" required>
+                                    <div class="error"></div>
+                                    <i class="uil uil-lock icon"></i>
+                                    <i class="uil uil-eye-slash showHidePw"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <div class="checkbox-content">
+                                        <input type="checkbox" id="sigCheck">
+                                        <label for="sigCheck" class="text">Remember me</label>
+                                    </div>
+                                    
+                                    <a href="#" class="text">Forgot password?</a>
+                                </div>
+            
+                                <div class="input-field button">
+                                    <input type="submit" a href="test.html"  value="Take exam now">
+                                    
+                                </div>
+                            </form>
+            
+                            <div class="login-signup">
+                                <span class="text">A member?
+                                    <a href="#" class="text login-link">Login now</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+        </div>
+    </div>
+    <!--<script src="main.js"></script> -->
+    <script src="js/script.js"></script>
+    <script>
+  </script>
+</body>
+</html>

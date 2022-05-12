@@ -1,0 +1,99 @@
+/*Root it's like #define */
+/*
+    rem : Relative to font-size of the root element	1rem = 16px *
+    vh : Relative to 1% of the height of the viewport*
+    vw : Relative to 1% of the width of the viewport*
+    %   : Relative to the parent element	
+    to make a nice shadow https://getcssscan.com/css-box-shadow-examples
+*/
+@import url('content.css');
+@import url('modal.css');
+@import url('login.css');
+@import url('quiz.css');
+
+:root{
+    --darkgray  : #212329;
+    --darkgreen :#7AB07F;
+    /*--darkgreen :#86BB5A;*/
+    --brginred :#7ad183;
+    --white    : #fff;
+    /*--lightred : #F9433DDC; */
+    --lightblue : #1A4572;
+    --orange : #F07025;
+    --lightgray : #b1b1b1;
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Nunito', sans-serif;
+}
+.nav-container{
+    width: 100%;
+    background-color: var(--darkgreen);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 02fr auto lfr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+/*# for ID, dot for Class*/
+#navbar-logo{
+    color: var(--white);
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/*Make a good representation*/
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    list-style: none;
+    text-align: center ;    
+    width: 70%;
+    justify-self: end;
+}
+/*To remove the d efult ul style*/
+.nav-links{
+    text-align: center;
+    color : white;
+    text-decoration: none;
+}
+.nav-links:hover{
+    color: var(--brginred);
+    transition: all 0.2s ease-out;
+}
+.nav-links-btn{
+    background-color: var(--brginred);
+    padding: 6px 16px;
+    border-radius: 4px;
+
+} 
+.nav-links-btn:hover {
+    background-color: transparent;
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1px var(--brginred);
+    transition: all 0.3s ease-out; 
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
